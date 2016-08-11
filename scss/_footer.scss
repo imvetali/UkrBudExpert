@@ -1,0 +1,24 @@
+.bottom {
+	background: $primary-black;
+	height: 70px;
+	li {
+		margin-left: 45px;
+		height: inherit;
+		list-style: none;
+		display: inline-block;
+		@include media ($tablet) {
+			margin-left: 15px;
+		}
+	}
+	&-nav {
+		@include media($mobile) {
+			display: none;
+		}
+	}
+	&-copyright {
+		color: $grey-light;
+		font-size: 15px;
+		font-family: 'Proxima Nova Rg';
+		font-weight: normal;
+	}
+}

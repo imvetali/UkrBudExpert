@@ -1,0 +1,110 @@
+header,
+.news,
+.contacts {
+	@include outer-container (1160px);
+}
+
+.header {
+	&-logo {
+		@include span-columns(3);
+	}
+	&-nav {
+		@include shift(3);
+		@include span-columns(6);
+		@include omega();
+		@include media($tablet) {
+			@include shift (1);
+			@include span-columns(7);
+			@include omega ();
+		}
+		@include media($mobile) {
+			display: none;
+		}
+	}
+	&-about {
+		@include span-columns(6);
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+	&-down {
+		@include span-columns(12);
+		clear: both;
+	}
+}
+
+.news,
+.contacts {
+	&-item {
+		@include span-columns(4);
+		width: 31.1%;
+		margin-right: 2.2%;
+		@include media($mobile) {
+			margin-top: 20px !important;
+			padding: 15px 15px;
+			@include span-columns(12);
+		}
+	}
+}
+
+
+
+
+.presentation {
+	@include outer-container (900px);
+	@include media($tablet) {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	@include media($mobile) {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	&-title {
+		width: 46.82117%;
+		@include span-columns(6);
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+	&-descr {
+		width: 42.82117%;
+		@include span-columns(6);
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+	&-company {
+		clear: both;
+	}
+}
+
+.testimonials {
+	@include outer-container (775px);
+	@include media ($mobile) {
+		margin-top: -110px !important;
+	}
+}
+
+.bottom {
+	padding: 25px;
+	&-logo {
+		@include span-columns(3);
+		@include media($mobile) {
+			@include span-columns(6);
+		}
+	}
+	&-nav {
+		text-align: center;
+		@include span-columns(6);
+	}
+	&-copyright {
+		text-align: right;
+		@include span-columns(3);
+		@include media($mobile) {
+			@include span-columns(6);
+		}
+	}
+}
+
+

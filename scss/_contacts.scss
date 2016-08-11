@@ -1,0 +1,18 @@
+.contacts-item {
+	margin-top: 75px;
+	a {
+		display: block;
+		color: $primary-black;
+		&:last-child {
+			margin-top: 0;
+		}
+	}
+	&-title {
+		@extend .news-item-date;
+	}
+	&-content {
+		margin-top: 60px;
+		@extend .news-item-content;
+		font-size: 22px;
+	}
+}

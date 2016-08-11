@@ -1,0 +1,155 @@
+.header-wrapper {
+	position: relative;
+	background: url(../img/bg-image.jpg) no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	width: 100%;
+	@include media ($tablet) {
+		padding-left: 30px;
+		padding-right:30px;
+	}
+	@include media ($mobile) {
+		padding-left: 30px;
+		padding-right:30px;
+	}
+}
+
+.header {
+	&-about {
+		margin-top: 50px;
+		@include media($mobile) {
+			margin-top: 0;
+		}
+	}
+	&-top {
+		height: 130px;
+	}
+	&-logo {
+		a {
+			font-size: 24px;
+			font-weight: normal;
+			position: relative;
+			top: 50%;
+			@include centerY;
+			height: inherit;
+		}
+		height: inherit;
+	}
+	&-nav {
+		height: inherit;
+		ul {
+			display: inline;
+			height: inherit;
+			float: right;
+			li {
+				margin-left: 46px;
+				height: inherit;
+				list-style: none;
+				display: inline-block;
+				@include media ($tablet) {
+					margin-left: 15px;
+				}		
+				a {
+					text-transform: uppercase;
+					font-size: 13px;
+					font-family: 'Proxima Nova Rg';
+					font-weight: normal;
+					position: relative;
+					top: 50%;
+					@include centerY;
+					height: inherit;
+					&:after {
+						position: absolute;
+						content: '';
+						bottom: -5px;
+						left: 0;
+						width: 0;
+						border-bottom: 2px solid white;
+					}
+
+					&:hover:after {
+						width: 100%;
+						transition: 0.4s width;
+					}
+				}
+			}
+		}
+	}
+	&-title {
+		font-family: 'Playfair Display';
+		font-size: 46px;
+		font-weight: bold;
+		color: $white;
+		&:after {
+			display: block;
+			height: 35px;
+			content: '';
+			bottom: -5px;
+			left: 0;
+			width: 40px;
+			border-bottom: 3px solid $primary-brown;
+		}
+		@include media($mobile) {
+			font-size: 40px;
+		}
+	}
+	&-subtitle {
+		margin-top: 35px;
+		font-size: 17px;
+		font-family: 'Proxima Nova Rg';
+		font-weight: normal;
+		color: $white;
+	}
+	&-services {
+		margin-top: 35px;
+		font-family: 'Proxima Nova Rg';
+		font-weight: bold;
+		letter-spacing: 0.7px;
+		font-size: 13px;
+		text-transform: uppercase;
+		padding: 19px 34px;
+		background: $primary-brown;
+		@include btn;
+		&:hover {
+			background: #af8734;
+			transition: 0.4s;
+		}
+	}
+	&-down {
+		margin: 100px 0 50px;
+		font-family: 'Proxima Nova Lt';		
+		font-size: 11px;
+		text-transform: uppercase;
+		text-align: center;
+		color: $grey-light;
+	}
+	&-mouse {
+		position: absolute;
+    bottom: -35px;
+    left: 50%;
+    padding: 18.5px 16px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 25px;
+    background: #b6934a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .22);
+		&:hover {
+			background: #af8734;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.36);
+			transition: 0.4s;
+		}
+	}
+	&-more {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);		
+		font-weight: bold;
+	}
+}
+
+.icon-mouse {
+	vertical-align: middle;
+	font-size: 29px;
+}

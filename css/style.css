@@ -1,0 +1,1633 @@
+﻿html
+{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before
+{
+    box-sizing: inherit;
+}
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html
+{
+    font-family: sans-serif;
+    /* 1 */
+
+        -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body
+{
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary
+{
+    display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video
+{
+    display: inline-block;
+    /* 1 */
+
+    vertical-align: baseline;
+    /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls])
+{
+    display: none;
+
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template
+{
+    display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a
+{
+    background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover
+{
+    outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title]
+{
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong
+{
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn
+{
+    font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1
+{
+    font-size: 2em;
+
+    margin: .67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark
+{
+    color: #000; 
+    background: #ff0;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small
+{
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup
+{
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    vertical-align: baseline;
+}
+
+sup
+{
+    top: -.5em;
+}
+
+sub
+{
+    bottom: -.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img
+{
+    border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root)
+{
+    overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure
+{
+    margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr
+{
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre
+{
+    overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp
+{
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea
+{
+    /* 1 */
+    font: inherit;
+    /* 2 */
+
+    margin: 0;
+
+    color: inherit;
+    /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button
+{
+    overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select
+{
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit']
+{
+    /* 2 */
+    cursor: pointer;
+
+    -webkit-appearance: button;
+    /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled]
+{
+    cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner
+{
+    padding: 0; 
+
+    border: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input
+{
+    line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type='checkbox'],
+input[type='radio']
+{
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button
+{
+    height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type='search']
+{
+    /* 1 */
+    /* 2 */
+    box-sizing: content-box; 
+
+    -webkit-appearance: textfield;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration
+{
+    -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset
+{
+    margin: 0 2px;
+    padding: .35em .625em .75em; 
+
+    border: 1px solid #c0c0c0;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend
+{
+    /* 1 */
+    padding: 0;
+
+    border: 0;
+    /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea
+{
+    overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup
+{
+    font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table
+{
+    border-spacing: 0; 
+    border-collapse: collapse;
+}
+
+td,
+th
+{
+    padding: 0;
+}
+
+/* This stylesheet generated by Transfonter (http://transfonter.org) on August 10, 2016 9:31 AM */
+@font-face
+{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-style: normal; 
+
+    src: url('../fonts/PlayfairDisplay-Black.eot');
+    src: url('../fonts/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-Black.woff') format('woff'), url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: normal; 
+
+    src: url('../fonts/PlayfairDisplay-Bold.eot');
+    src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-Bold.woff') format('woff'), url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: normal; 
+
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic; 
+
+    src: url('../fonts/PlayfairDisplay-Italic.eot');
+    src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-Italic.woff') format('woff'), url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: italic; 
+
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'), url('../fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-style: italic; 
+
+    src: url('../fonts/PlayfairDisplay-BlackItalic.eot');
+    src: url('../fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PlayfairDisplay-BlackItalic.woff') format('woff'), url('../fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-SemiboldIt.eot');
+    src: url('../fonts/ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-SemiboldIt.woff') format('woff'), url('../fonts/ProximaNova-SemiboldIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Th';
+    font-weight: 800;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNova-Extrabld.eot');
+    src: url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Extrabld.woff') format('woff'), url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Th';
+    font-weight: 100;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNovaT-Thin.eot');
+    src: url('../fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNovaT-Thin.woff') format('woff'), url('../fonts/ProximaNovaT-Thin.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Th';
+    font-weight: 800;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-ExtrabldIt.eot');
+    src: url('../fonts/ProximaNova-ExtrabldIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-ExtrabldIt.woff') format('woff'), url('../fonts/ProximaNova-ExtrabldIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Bl';
+    font-weight: 900;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNova-Black.eot');
+    src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Black.woff') format('woff'), url('../fonts/ProximaNova-Black.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Bl';
+    font-weight: 900;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-BlackIt.eot');
+    src: url('../fonts/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-BlackIt.woff') format('woff'), url('../fonts/ProximaNova-BlackIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-RegularIt.eot');
+    src: url('../fonts/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-RegularIt.woff') format('woff'), url('../fonts/ProximaNova-RegularIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNova-Semibold.eot');
+    src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Th';
+    font-weight: 100;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-ThinIt.eot');
+    src: url('../fonts/ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-ThinIt.woff') format('woff'), url('../fonts/ProximaNova-ThinIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-BoldIt.eot');
+    src: url('../fonts/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-BoldIt.woff') format('woff'), url('../fonts/ProximaNova-BoldIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 300;
+    font-style: normal; 
+
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 300;
+    font-style: italic; 
+
+    src: url('../fonts/ProximaNova-LightIt.eot');
+    src: url('../fonts/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-LightIt.woff') format('woff'), url('../fonts/ProximaNova-LightIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal; 
+
+    src: url('../fonts/icomoon.eot?sumukl');
+    src: url('../fonts/icomoon.eot?sumukl#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?sumukl') format('truetype'), url('../fonts/icomoon.woff?sumukl') format('woff'), url('../fonts/icomoon.svg?sumukl#icomoon') format('svg');
+}
+
+i
+{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before
+{
+    content: '\e900';
+}
+
+.icon-mouse .path1:before
+{
+    content: '\e901';
+
+    color: white;
+}
+
+.icon-mouse .path2:before
+{
+    margin-left: -.62109375em;
+
+    content: '\e902';
+
+    color: #e2c890;
+}
+
+.icon-mouse .path3:before
+{
+    margin-left: -.62109375em;
+
+    content: '\e903';
+
+    color: white;
+}
+
+.icon-mouse .path4:before
+{
+    margin-left: -.62109375em;
+
+    content: '\e904';
+
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none; 
+
+    color: white;
+}
+
+header,
+.news,
+.contacts
+{
+    max-width: 1160px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+header::after,
+.news::after,
+.contacts::after
+{
+    display: table; 
+    clear: both;
+
+    content: '';
+}
+
+.header-logo
+{
+    display: block;
+    float: left;
+
+    width: 23.23176%; 
+    margin-right: 2.35765%;
+}
+.header-logo:last-child
+{
+    margin-right: 0;
+}
+
+.header-nav
+{
+    display: block;
+    float: left;
+
+    width: 48.82117%;
+    margin-right: 2.35765%;
+    margin-right: 0; 
+    margin-left: 25.58941%;
+}
+.header-nav:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 1210px)
+{
+    .header-nav
+    {
+        display: block;
+        float: left;
+
+        width: 57.35098%;
+        margin-right: 2.35765%;
+        margin-right: 0; 
+        margin-left: 8.5298%;
+    }
+    .header-nav:last-child
+    {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .header-nav
+    {
+        display: none;
+    }
+}
+
+.header-about
+{
+    display: block;
+    float: left;
+
+    width: 48.82117%; 
+    margin-right: 2.35765%;
+}
+.header-about:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 767px)
+{
+    .header-about
+    {
+        display: block;
+        float: left;
+
+        width: 100%; 
+        margin-right: 2.35765%;
+    }
+    .header-about:last-child
+    {
+        margin-right: 0;
+    }
+}
+
+.header-down
+{
+    display: block;
+    float: left;
+    clear: both; 
+
+    width: 100%;
+    margin-right: 2.35765%;
+}
+.header-down:last-child
+{
+    margin-right: 0;
+}
+
+.news-item,
+.contacts-item
+{
+    display: block;
+    float: left;
+
+    width: 31.76157%;
+    width: 31.1%;
+    margin-right: 2.35765%;
+    margin-right: 2.2%;
+}
+.news-item:last-child,
+.contacts-item:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 767px)
+{
+    .news-item,
+    .contacts-item
+    {
+        display: block;
+        float: left;
+
+        width: 100%; 
+        margin-top: 20px !important;
+        margin-right: 2.35765%;
+        padding: 15px 15px;
+    }
+    .news-item:last-child,
+    .contacts-item:last-child
+    {
+        margin-right: 0;
+    }
+}
+
+.presentation
+{
+    max-width: 900px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+.presentation::after
+{
+    display: table; 
+    clear: both;
+
+    content: '';
+}
+@media screen and (max-width: 1210px)
+{
+    .presentation
+    {
+        margin-right: 30px; 
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .presentation
+    {
+        margin-right: 30px; 
+        margin-left: 30px;
+    }
+}
+.presentation-title
+{
+    display: block;
+    float: left;
+
+    width: 46.82117%;
+    width: 48.82117%; 
+    margin-right: 2.35765%;
+}
+.presentation-title:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 767px)
+{
+    .presentation-title
+    {
+        display: block;
+        float: left;
+
+        width: 100%; 
+        margin-right: 2.35765%;
+    }
+    .presentation-title:last-child
+    {
+        margin-right: 0;
+    }
+}
+.presentation-descr
+{
+    display: block;
+    float: left;
+
+    width: 42.82117%;
+    width: 48.82117%; 
+    margin-right: 2.35765%;
+}
+.presentation-descr:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 767px)
+{
+    .presentation-descr
+    {
+        display: block;
+        float: left;
+
+        width: 100%; 
+        margin-right: 2.35765%;
+    }
+    .presentation-descr:last-child
+    {
+        margin-right: 0;
+    }
+}
+.presentation-company
+{
+    clear: both;
+}
+
+.testimonials
+{
+    max-width: 775px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+.testimonials::after
+{
+    display: table; 
+    clear: both;
+
+    content: '';
+}
+@media screen and (max-width: 767px)
+{
+    .testimonials
+    {
+        margin-top: -110px !important;
+    }
+}
+
+.bottom
+{
+    padding: 25px;
+}
+.bottom-logo
+{
+    display: block;
+    float: left;
+
+    width: 23.23176%; 
+    margin-right: 2.35765%;
+}
+.bottom-logo:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 767px)
+{
+    .bottom-logo
+    {
+        display: block;
+        float: left;
+
+        width: 48.82117%; 
+        margin-right: 2.35765%;
+    }
+    .bottom-logo:last-child
+    {
+        margin-right: 0;
+    }
+}
+.bottom-nav
+{
+    display: block;
+    float: left;
+
+    width: 48.82117%; 
+    margin-right: 2.35765%;
+
+    text-align: center;
+}
+.bottom-nav:last-child
+{
+    margin-right: 0;
+}
+.bottom-copyright
+{
+    display: block;
+    float: left;
+
+    width: 23.23176%; 
+    margin-right: 2.35765%;
+
+    text-align: right;
+}
+.bottom-copyright:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 767px)
+{
+    .bottom-copyright
+    {
+        display: block;
+        float: left;
+
+        width: 48.82117%; 
+        margin-right: 2.35765%;
+    }
+    .bottom-copyright:last-child
+    {
+        margin-right: 0;
+    }
+}
+
+.header-wrapper
+{
+    position: relative;
+
+    width: 100%; 
+    min-height: 100%;
+
+    background: url(../img/bg-image.jpg) no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 1210px)
+{
+    .header-wrapper
+    {
+        padding-right: 30px; 
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .header-wrapper
+    {
+        padding-right: 30px; 
+        padding-left: 30px;
+    }
+}
+
+.header-about
+{
+    margin-top: 50px;
+}
+@media screen and (max-width: 767px)
+{
+    .header-about
+    {
+        margin-top: 0;
+    }
+}
+
+.header-top
+{
+    height: 130px;
+}
+
+.header-logo
+{
+    height: inherit;
+}
+.header-logo a
+{
+    font-size: 24px;
+    font-weight: normal;
+
+    position: relative;
+    top: 50%;
+
+    height: inherit; 
+
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.header-nav
+{
+    height: inherit;
+}
+.header-nav ul
+{
+    display: inline;
+    float: right; 
+
+    height: inherit;
+}
+.header-nav ul li
+{
+    display: inline-block; 
+
+    height: inherit;
+    margin-left: 46px;
+
+    list-style: none;
+}
+@media screen and (max-width: 1210px)
+{
+    .header-nav ul li
+    {
+        margin-left: 15px;
+    }
+}
+.header-nav ul li a
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 13px;
+    font-weight: normal;
+
+    position: relative;
+    top: 50%;
+
+    height: inherit; 
+
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-transform: uppercase;
+}
+.header-nav ul li a:after
+{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 0;
+
+    content: '';
+
+    border-bottom: 2px solid white;
+}
+.header-nav ul li a:hover:after
+{
+    width: 100%;
+
+    -webkit-transition: .4s width;
+            transition: .4s width;
+}
+
+.header-title
+{
+    font-family: 'Playfair Display';
+    font-size: 46px;
+    font-weight: bold;
+
+    color: #fff;
+}
+.header-title:after
+{
+    bottom: -5px;
+    left: 0;
+
+    display: block;
+
+    width: 40px;
+    height: 35px;
+
+    content: '';
+
+    border-bottom: 3px solid #b6934a;
+}
+@media screen and (max-width: 767px)
+{
+    .header-title
+    {
+        font-size: 40px;
+    }
+}
+
+.header-subtitle
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 17px;
+    font-weight: normal;
+
+    margin-top: 35px;
+
+    color: #fff;
+}
+
+.header-services
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 13px;
+    font-weight: bold;
+
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    margin-top: 35px;
+    padding: 19px 34px;
+
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+
+    outline: none; 
+    background: #b6934a;
+}
+.header-services:hover
+{
+    -webkit-transition: .4s;
+            transition: .4s; 
+
+    background: #af8734;
+}
+
+.header-down
+{
+    font-family: 'Proxima Nova Lt';
+    font-size: 11px;
+
+    margin: 100px 0 50px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #b3b3b3;
+}
+
+.header-mouse
+{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+
+    padding: 18.5px 16px;
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    border-radius: 25px;
+    background: #b6934a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .22);
+}
+.header-mouse:hover
+{
+    -webkit-transition: .4s;
+            transition: .4s; 
+
+    background: #af8734;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .36);
+}
+
+.header-more
+{
+    font-weight: bold; 
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.icon-mouse
+{
+    font-size: 29px; 
+
+    vertical-align: middle;
+}
+
+.wrapper-presentation
+{
+    padding: 105px 0 100px;
+
+    background: #f2f2f2;
+}
+
+.presentation
+{
+    padding: 58px 0 120px;
+
+    background: url(../img/bg-presentation.png) no-repeat;
+    background-position: 50% 0;
+}
+@media screen and (max-width: 767px)
+{
+    .presentation
+    {
+        background: none !important;
+    }
+}
+@media screen and (max-width: 1210px)
+{
+    .presentation
+    {
+        padding: 10px 0 120px;
+    }
+}
+.presentation-title
+{
+    font-family: 'Playfair Display';
+    font-size: 34px;
+    font-weight: normal;
+}
+.presentation-descr
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 17px;
+    font-weight: normal; 
+    line-height: 28px;
+
+    margin-top: 10px;
+}
+
+blockquote:before
+{
+    font-family: 'Playfair Display',serif;
+    font-size: 180px;
+
+    display: block;
+
+    width: 60px;
+    height: 80px;
+    margin: auto;
+
+    content: '\201c';
+
+    color: #e4e7e9;
+}
+
+.testimonials
+{
+    margin-top: -45px;
+
+    text-align: center;
+
+    color: #828990;
+}
+.testimonials-descr
+{
+    font-family: 'Playfair Display';
+    font-size: 30px; 
+
+    margin-top: 70px;
+}
+.testimonials-author
+{
+    font-size: 15px; 
+    font-style: normal;
+
+    margin-top: 40px;
+
+    text-transform: uppercase;
+}
+.testimonials-officer
+{
+    font-style: normal; 
+
+    display: block;
+
+    margin-top: 10px;
+}
+
+.news,
+.contacts
+{
+    margin-top: 65px;
+}
+@media screen and (max-width: 1210px)
+{
+    .news,
+    .contacts
+    {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .news,
+    .contacts
+    {
+        padding-right: 15px;
+    }
+}
+.news-title,
+.contacts-title
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 34px; 
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.news-item
+{
+    margin-top: 65px;
+    padding: 35px;
+
+    letter-spacing: .8px;
+
+    background: #f2f2f2;
+}
+.news-item-title
+{
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: normal;
+}
+.news-item-title:after
+{
+    bottom: -5px;
+    left: 0;
+
+    display: block;
+
+    width: 40px;
+    height: 30px;
+
+    content: '';
+
+    border-bottom: 3px solid #b6934a;
+}
+.news-item-content,
+.contacts-item-content
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 15px;
+    font-weight: normal; 
+
+    margin-top: 30px;
+}
+.news-item-button
+{
+    margin-top: 70px;
+}
+.news-item-button a
+{
+    float: right;
+
+    padding: 10px;
+
+    background: #2b2b2b;
+}
+.news-item-button a:hover
+{
+    -webkit-transition: .4s;
+            transition: .4s; 
+
+    opacity: .5;
+}
+.news-item-date,
+.contacts-item-title
+{
+    font-size: 15px;
+    font-weight: normal; 
+
+    float: left;
+
+    margin-top: 20px;
+
+    color: #828990;
+}
+
+.news-button-general .md-btn
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 13px;
+    font-weight: bold;
+
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 16px 67px;
+
+    cursor: pointer;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+
+    color: #2b2b2b;
+    border: 2px solid #b6934a;
+    outline: none;
+}
+.news-button-general .md-btn:hover
+{
+    -webkit-transition: .4s;
+            transition: .4s; 
+
+    color: #fff;
+    background: #b6934a;
+}
+
+.contacts-item
+{
+    margin-top: 75px;
+}
+.contacts-item a
+{
+    display: block;
+
+    color: #2b2b2b;
+}
+.contacts-item a:last-child
+{
+    margin-top: 0;
+}
+.contacts-item-content
+{
+    font-size: 22px; 
+
+    margin-top: 60px;
+}
+
+.map-canvas
+{
+    width: 100%; 
+    height: 500px;
+    margin-top: 65px;
+}
+.map-canvas img
+{
+    max-width: none;
+}
+
+.bottom
+{
+    height: 70px; 
+
+    background: #2b2b2b;
+}
+.bottom li
+{
+    display: inline-block; 
+
+    height: inherit;
+    margin-left: 45px;
+
+    list-style: none;
+}
+@media screen and (max-width: 1210px)
+{
+    .bottom li
+    {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .bottom-nav
+    {
+        display: none;
+    }
+}
+.bottom-copyright
+{
+    font-family: 'Proxima Nova Rg';
+    font-size: 15px;
+    font-weight: normal; 
+
+    color: #b3b3b3;
+}

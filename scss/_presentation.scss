@@ -1,0 +1,62 @@
+.wrapper-presentation {
+	padding: 105px 0 100px;
+	background: $grey-bg;
+}
+
+.presentation {
+	padding: 58px 0 120px;
+	background: url(../img/bg-presentation.png) no-repeat;
+	background-position: 50% 0;
+	@include media($mobile) {
+		background: none !important;
+	}
+	@include media($tablet) {
+		padding: 10px 0 120px;
+	}
+	&-title {
+		font-family: 'Playfair Display';
+		font-size: 34px;
+		font-weight: normal;
+	}
+	&-descr {
+		margin-top: 10px;
+		line-height: 28px;
+		font-family: 'Proxima Nova Rg';
+		font-size: 17px;
+		font-weight: normal;		
+	}
+}
+blockquote {
+	&:before {
+		font-family: "Playfair Display",serif;
+		display: block;
+		height: 80px;
+		width: 60px;
+		margin: auto;
+		content: '\201c';
+		font-size: 180px;
+		color: #e4e7e9;
+	}
+}
+
+.testimonials {
+	margin-top: -45px;
+	text-align: center;
+	color: #828990;
+	&-descr {
+		margin-top: 70px;
+		font-family: 'Playfair Display';
+		font-size: 30px;
+	}
+	&-author {
+		text-transform: uppercase;
+		margin-top: 40px;
+		font-style: normal;
+		font-size: 15px;
+	}
+	&-officer {
+		display: block;
+		margin-top: 10px;
+		font-style: normal;
+	}
+}

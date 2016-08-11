@@ -1,0 +1,84 @@
+.news,
+.contacts {
+	margin-top: 65px;
+	@include media ($tablet) {
+		padding-left: 15px;
+	}
+	@include media ($mobile) {
+		padding-right: 15px;
+	}
+	&-title {
+		text-transform: uppercase;
+		text-align: center; 
+		font-family: 'Proxima Nova Rg';
+		font-weight: bold;
+		font-size: 34px;
+	}
+}
+
+.news-item {
+	margin-top: 65px;
+	letter-spacing: 0.8px;
+	padding: 35px;
+	background: $grey-bg;
+	&-title {
+		font-family: 'Playfair Display';
+		font-size: 20px;
+		font-weight: normal;
+		&:after {
+			display: block;
+			height: 30px;
+			content: '';
+			bottom: -5px;
+			left: 0;
+			width: 40px;
+			border-bottom: 3px solid $primary-brown;
+		}
+	}
+	&-content {
+		margin-top: 30px;
+		font-family: 'Proxima Nova Rg';
+		font-size: 15px;
+		font-weight: normal;
+	}
+	&-button {
+		margin-top: 70px;
+		a {
+			float: right;
+			padding: 10px;
+			background: $primary-black;
+			&:hover {
+				opacity: 0.5;
+				transition: 0.4s;
+			}
+		}
+	}
+	&-date {
+		float: left;
+		margin-top: 20px;
+		font-size: 15px;
+		color: $primary-grey;
+		font-weight: normal;
+	}
+}
+
+.news-button-general {
+	.md-btn {
+		margin-top: 50px;
+		@include centerX;
+		border: 2px solid $primary-brown;
+		color: $primary-black;
+		font-family: 'Proxima Nova Rg';
+		font-weight: bold;
+		letter-spacing: 0.7px;
+		font-size: 13px;
+		text-transform: uppercase;
+		padding: 16px 67px;
+		@include btn;
+		&:hover {
+			color: #fff;
+			background: $primary-brown;
+			transition: 0.4s;
+		}
+	}
+}
