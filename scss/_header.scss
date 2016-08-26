@@ -4,6 +4,8 @@
 	background-size: cover;
 	min-height: 100%;
 	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
 	@include media ($tablet) {
 		padding-left: 30px;
 		padding-right:30px;
@@ -125,14 +127,14 @@
 	}
 	&-mouse {
 		position: absolute;
-    bottom: -35px;
-    left: 50%;
-    padding: 18.5px 16px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-radius: 25px;
-    background: #b6934a;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .22);
+		bottom: -35px;
+		left: 50%;
+		padding: 18.5px 16px;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		border-radius: 25px;
+		background: #b6934a;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, .22);
 		&:hover {
 			background: #af8734;
 			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.36);
@@ -143,8 +145,8 @@
 		position: absolute;
 		bottom: 50px;
 		left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);		
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);		
 		font-weight: bold;
 	}
 }
