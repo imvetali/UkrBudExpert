@@ -787,7 +787,7 @@ header::after,
 {
     margin-right: 0;
 }
-@media screen and (max-width: 1210px)
+@media screen and (max-width: 960px)
 {
     .header-nav
     {
@@ -902,22 +902,6 @@ header::after,
     clear: both;
 
     content: '';
-}
-@media screen and (max-width: 1210px)
-{
-    .presentation
-    {
-        margin-right: 30px; 
-        margin-left: 30px;
-    }
-}
-@media screen and (max-width: 767px)
-{
-    .presentation
-    {
-        margin-right: 30px; 
-        margin-left: 30px;
-    }
 }
 .presentation-title
 {
@@ -1080,13 +1064,15 @@ header::after,
 {
     position: relative;
 
-    width: 100%; 
+    width: 100%;
     min-height: 100%;
+    padding-right: 30px; 
+    padding-left: 30px;
 
     background: url(../img/bg-image.jpg) no-repeat;
     background-size: cover;
 }
-@media screen and (max-width: 1210px)
+@media screen and (max-width: 960px)
 {
     .header-wrapper
     {
@@ -1158,7 +1144,7 @@ header::after,
 
     list-style: none;
 }
-@media screen and (max-width: 1210px)
+@media screen and (max-width: 960px)
 {
     .header-nav ul li
     {
@@ -1350,11 +1336,11 @@ header::after,
         background: none !important;
     }
 }
-@media screen and (max-width: 1210px)
+@media screen and (max-width: 960px)
 {
     .presentation
     {
-        padding: 10px 0 120px;
+        padding: 10px 30px 120px 30px;
     }
 }
 .presentation-title
@@ -1409,6 +1395,8 @@ blockquote:before
     font-size: 15px; 
     font-style: normal;
 
+    display: inline-block;
+
     margin-top: 40px;
 
     text-transform: uppercase;
@@ -1425,23 +1413,9 @@ blockquote:before
 .news,
 .contacts
 {
-    margin-top: 65px;
-}
-@media screen and (max-width: 1210px)
-{
-    .news,
-    .contacts
-    {
-        padding-left: 15px;
-    }
-}
-@media screen and (max-width: 767px)
-{
-    .news,
-    .contacts
-    {
-        padding-right: 15px;
-    }
+    margin-top: 65px; 
+    padding-right: 30px;
+    padding-left: 30px;
 }
 .news-title,
 .contacts-title
@@ -1609,7 +1583,7 @@ blockquote:before
 
     list-style: none;
 }
-@media screen and (max-width: 1210px)
+@media screen and (max-width: 960px)
 {
     .bottom li
     {
